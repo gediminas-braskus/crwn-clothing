@@ -1,5 +1,5 @@
 Working on a shopping website
 
-Using Create React App(React) for front-end and Firebase for backend
+Web App is powered by Create React App(React) and Firebase.
 
 Also, implementing Redux and Stripe payments into the project
