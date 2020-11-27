@@ -14,8 +14,18 @@ const CollectionPreview = ({ title, items }) => {
       effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
-      slidesPerView: 4,
       loop: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 2
+        },
+        640: {
+          slidesPerView: 3
+        },
+        1000: {
+          slidesPerView: 4
+        }
+      },
       coverflowEffect: {
         rotate: 50,
         stretch: 0,

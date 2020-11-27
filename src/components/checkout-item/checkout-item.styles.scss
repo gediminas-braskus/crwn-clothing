@@ -16,11 +16,6 @@
         height: 100%;
       }
     }
-    .name,
-    .quantity,
-    .price {
-      width: 23%;
-    }
   
     .quantity {
       display: flex;
@@ -39,4 +34,28 @@
       cursor: pointer;
     }
 }
-  
+
+@media screen and (max-width: 400px) {
+  .name,
+  .quantity,
+  .price {
+    width: 21% !important;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .name,
+  .quantity,
+  .price {
+    width: 25% !important;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .name,
+  .quantity,
+  .price {
+    width: 23% !important;
+  }
+}
+

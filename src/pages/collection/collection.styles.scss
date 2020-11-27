@@ -11,9 +11,20 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-gap: 10px;
+      justify-content: center;
   
       & .collection-item {
         margin-bottom: 30px;
       }
     }
+}
+
+@media screen and (max-width: 1000px) {
+  .collection-page {
+    padding: 10px;
+  }
+
+  .items {
+    grid-template-columns: 1fr 1fr !important;
+  }
 }

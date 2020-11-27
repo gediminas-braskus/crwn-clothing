@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
-import { Redirect } from "react-router-dom";
 
 import CheckoutItem from "../../components/checkout-item/checkout-item.component";
 import StripeCheckoutButton from "../../components/stripe-button/stripe-button.component";
@@ -48,7 +47,13 @@ const CheckoutPage = ({ cartItems, total }) => (
         <StripeCheckoutButton price={total} cartItems={cartItems} />
       </div>
     ) : (
-      <Redirect to="/shop" />
+      <div className="checkout-page">
+        <span className="empty-cart">
+          There is nothing here at the moment,
+          <br />
+          Go buy some clothes.
+        </span>
+      </div>
     )}
   </>
 );

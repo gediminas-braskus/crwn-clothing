@@ -40,4 +40,39 @@
       font-size: 24px;
       color: red;
     }
+
+    .empty-cart {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 24px;
+      width: 100%;
+      padding: 10px 0;
+      border-bottom: 1px solid darkgrey;
+    }
 }
+
+@media screen and (max-width: 1000px) {
+  .checkout-page {
+    width: 100%;
+    padding: 10px;
+
+    .checkout-header {
+      width: 100%;
+
+      .header-block {
+        &:last-child {
+          width: unset;
+        }
+      }
+    }
+
+    .total {
+      font-size: 32px;
+    }
+
+    .test-warning {
+      font-size: 22px;
+    }
+  }
+}
+  

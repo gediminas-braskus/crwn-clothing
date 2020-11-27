@@ -27,3 +27,20 @@
       margin-top: auto;
     }
 }
+
+@media screen and (max-width: 1000px) {
+  .cart-dropdown {
+    top: 60px;
+    right: 10px;
+    width: 280px;
+    height: 400px;
+
+    .cart-items {
+      height: 300px;
+    }
+
+    .empty-message {
+      font-size: 22px;
+    }
+  }
+}
