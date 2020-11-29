@@ -24,6 +24,12 @@ const CollectionPreview = ({ title, items }) => {
         },
         1000: {
           slidesPerView: 4
+        },
+        1800: {
+          slidesPerView: 5
+        },
+        2300: {
+          slidesPerView: 6
         }
       },
       coverflowEffect: {
