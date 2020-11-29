@@ -3,16 +3,6 @@
     box-sizing: border-box;
 }
 
-body {
-    padding: 20px 60px;    
-}
-
-@media screen and (max-width: 1000px) {
-    body {
-        padding: 10px !important;
-    }
-}
-
 a {
     text-decoration: none;
     color: black;

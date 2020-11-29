@@ -13,7 +13,7 @@ import {
 import "./checkout.styles.scss";
 
 const CheckoutPage = ({ cartItems, total }) => (
-  <>
+  <div className='checkout-background'>
     {cartItems.length ? (
       <div className="checkout-page">
         <div className="checkout-header">
@@ -55,7 +55,7 @@ const CheckoutPage = ({ cartItems, total }) => (
         </span>
       </div>
     )}
-  </>
+  </div>
 );
 
 const MapStateToProps = createStructuredSelector({

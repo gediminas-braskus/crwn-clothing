@@ -1,0 +1,60 @@
+.footer {
+    position: absolute;
+    display: flex;
+    background-color: darkgrey;
+    width: 100%;
+    left: 0;
+    height: 325px;
+    margin-top: 20px;
+    padding: 20px 60px;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+
+    .logo {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        margin: 25px 0;
+
+        .logo-container {
+            display: flex;
+            padding: 0px 12px 0 25px;
+        }
+    
+        .name {
+            display: flex;
+            height: 100%;
+            align-items: flex-end;
+        }
+    }
+
+    .shop-links {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-top: 40px;
+        
+        .link {
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+
+    .copyrights {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .logo {
+        justify-content: center;
+    }
+}
