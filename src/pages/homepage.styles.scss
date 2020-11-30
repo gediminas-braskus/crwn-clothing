@@ -7,10 +7,21 @@
     margin: 0px 10px 10px 10px;
   }
 
-  @media screen and (max-width: 1000px) {
-    .homepage {
-        padding: 10px;
-    }
+@media screen and (max-width: 1000px) {
+  .homepage {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .homepage {
+    padding: 20px 160px;
+  }
 }
   
+@media screen and (min-width: 2200px) {
+  .homepage {
+    padding: 20px 240px;
+  }
+}
   

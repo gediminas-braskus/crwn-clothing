@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-  margin: 0 7.5px 15px;
+  margin: 10px;
   overflow: hidden;
 
   &:hover {
@@ -69,6 +69,6 @@
 
 @media screen and (max-width: 1000px) {
   .menu-item {
-    height: 200px !important;
+    height: 225px !important;
   }
 }
