@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useCallback } from "react";
 import { Route } from "react-router-dom";
 
 import CollectionOverview from "../../components/collection-overview/collection-overview.component";
@@ -8,18 +8,24 @@ import ShopHeader from "../../components/shop-header/shop-header.component";
 import "./shop.styles.scss";
 
 const ShopPage = ({ match }) => {
-  useEffect(() => {
-      window.onscroll = () => {
-        const shopHeader = document.querySelector(".shop-page-header");
-        let stickyShopHeader = shopHeader.offsetTop;
+  const toggleStickyShopHeader = useCallback(() => {
+    const shopHeader = document.querySelector(".shop-page-header");
+    const stickyShopHeader = shopHeader.offsetTop;
 
-        if (window.pageYOffset > stickyShopHeader) {
-          shopHeader.classList.add("sticky-shop-header");
-        } else {
-          shopHeader.classList.remove("sticky-shop-header");
-        }
-      };
+    if (window.pageYOffset > stickyShopHeader) {
+      shopHeader.classList.add("sticky-shop-header");
+    } else {
+      shopHeader.classList.remove("sticky-shop-header");
+    }
   }, []);
+
+  useEffect(() => {
+    document.addEventListener("scroll", toggleStickyShopHeader);
+
+    return () => {
+      document.removeEventListener("scroll", toggleStickyShopHeader);
+    };
+  }, [toggleStickyShopHeader]);
 
   return (
     <div className="shop-page">
