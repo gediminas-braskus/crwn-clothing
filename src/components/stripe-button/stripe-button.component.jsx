@@ -13,7 +13,6 @@ const StripeCheckoutButton = ({ price, cartItems, clearItem, history }) => {
     "pk_test_51Hrig9BLWqFUCyRUoEPjpMVZpflU9pQVnY6njfeAEohPAHH7bHyfeOK1vSbmjWUA0BwuCEXdbtuWw5IpKq5FVe5D00GJ92f315";
 
   const onToken = (token) => {
-    console.log(token);
     alert("Payment Successful!");
 
     cartItems.map(cartItem => clearItem(cartItem));
